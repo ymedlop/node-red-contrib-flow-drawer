@@ -1,0 +1,42 @@
+<script type="text/x-red" data-template-name="flowDrawer">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> <span data-i18n="node-red:common.label.name"></span></label>
+        <input type="text" id="node-input-name" data-i18n="[placeholder]node-red:common.label.name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-flows"><i class="fa fa-edit"></i> <span data-i18n="node-red:template.label.property"></span></label>
+        <input type="text" id="node-input-flows" placeholder="payload" style="width:275px;">
+        <input type="hidden" id="node-input-flowsType">
+    </div>
+</script>
+<script type="text/javascript">
+    RED.nodes.registerType('flowDrawer', {
+        color: 'rgb(255, 36, 4)',
+        category: 'function',
+        paletteLabel: 'flowDrawer',
+        defaults: {
+            name: {
+                value: ''
+            },
+            flows: {
+                value: 'payload'
+            },
+            flowsType: {
+                value: 'msg'
+            }
+        },
+        inputs: 1,
+        outputs: 2,
+        icon: 'template.png',
+        label: function() {
+            return this.name || 'flow-drawer';
+        },
+        oneditprepare: function() {
+            $('#node-input-flows').typedInput({
+                default: 'msg',
+                types: ['msg','flow','global'],
+                typeField: $('#node-input-flowsType')
+            });
+        }
+    });
+</script>
