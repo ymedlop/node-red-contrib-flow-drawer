@@ -3,6 +3,9 @@
   "version": "1.0.0-alpha",
   "description": "",
   "keywords": [],
+  "scripts": {
+    "ci-publish": "ci-publish"
+  },
   "node-red": {
     "nodes": {
       "flowDrawer": "lib/flowDrawer.js"
