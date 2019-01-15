@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/ymedlop/node-red-contrib-flow-drawer/tree/master.svg?style=svg)](https://circleci.com/gh/ymedlop/node-red-contrib-flow-drawer/tree/master)
+[![CircleCI](https://circleci.com/gh/ymedlop/node-red-contrib-flow-drawer/tree/master.svg?style=svg)](https://circleci.com/gh/ymedlop/node-red-contrib-flow-drawer/tree/master) [![Greenkeeper badge](https://badges.greenkeeper.io/ymedlop/node-red-contrib-flow-drawer.svg)](https://greenkeeper.io/)
 
 # node-red-contrib-flow-drawer
 
