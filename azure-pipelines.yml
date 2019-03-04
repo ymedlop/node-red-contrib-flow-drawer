@@ -17,8 +17,7 @@ steps:
 
 - script: |
     npm install
-    npm run lint
-  displayName: 'npm install and lint'
+  displayName: 'npm install
 
 - task: CopyFiles@2
   inputs:
